@@ -1,0 +1,10 @@
+<!-- Place this lines inside devices block -->
+<!-- Juste after <emulator>/usr/local/sbin/qemu</emulator> -->
+<disk type='file' device='cdrom'>
+    <driver name='qemu' type='raw'/>
+    <source file='/mnt/user/isos/ubuntu-20.04.3-desktop-amd64.iso'/>
+    <target dev='hda' bus='sata'/>
+    <readonly/>
+    <boot order='2'/>
+    <address type='drive' controller='0' bus='0' target='0' unit='0'/>
+</disk>
